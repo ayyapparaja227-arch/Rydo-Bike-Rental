@@ -1,0 +1,19 @@
+package com.rydo.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import java.time.LocalDateTime;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class BookingRequest {
+    private Long bikeId;
+    private Long renterId;
+    private LocalDateTime startTime;
+    private LocalDateTime endTime;
+    private Integer hours; // For simple hour-based bookings
+    private String pickupOTP;
+    private String dropoffOTP;
+}

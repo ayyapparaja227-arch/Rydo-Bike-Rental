@@ -1,0 +1,46 @@
+# ===================================================================
+# Rydo Project .gitignore
+# ===================================================================
+
+# macOS System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE and Editor Files
+.idea/
+*.iml
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.project
+.classpath
+.settings/
+
+# Spring Boot & Maven (Backend)
+rydo-backend/target/
+rydo-backend/*.log
+rydo-backend/logs/
+rydo-backend/.flattened-pom.xml
+rydo-backend/src/main/resources/application-local.properties
+
+# Vite & Node.js (Frontend)
+rydo-frontend/node_modules/
+rydo-frontend/dist/
+rydo-frontend/dist-ssr/
+rydo-frontend/*.local
+rydo-frontend/.env*.local
+rydo-frontend/npm-debug.log*
+rydo-frontend/yarn-debug.log*
+rydo-frontend/yarn-error.log*
+rydo-frontend/pnpm-debug.log*
+
+# Environment & Secrets
+.env
+.env.local
+*.pem
+*.key
